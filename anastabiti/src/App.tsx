@@ -3,7 +3,7 @@ import { useState } from "react";
 //inspiration https://www.behance.net/gallery/157781767/Design-a-cool-portfolio-for-a-web-developer?tracking_source=search_projects|web+design+portfolio&l=8
 function App() {
   function handleClick() {
-    console.log("clocked ")
+    console.log("clocked ");
     if (localStorage.theme === "dark" || !("theme" in localStorage)) {
       //add class=dark in html element
       document.documentElement.classList.add("dark");
@@ -22,12 +22,16 @@ function App() {
     <>
       {/* <h1 className="text-13xl font-bold underline">Backend developer</h1> */}
       {/* <h1>Anas TABITI</h1> */}
-        <button onClick={handleClick}>
-        <div className="flex-initial w-64 font-bold underline decoration-sky-500 text-red-800">
-          Change Mode (Dark/Light)
-        </div>
-        </button>
-        
+
+      <button
+        style={{ position: "absolute" ,top:"10px", right:"10px"}}
+        onClick={handleClick}
+        type="button"
+        className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Dark/Light
+      </button>
+
     </>
   );
 }
