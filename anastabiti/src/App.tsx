@@ -1,28 +1,17 @@
 import { useState } from "react";
+import Header from "./components/headrs";
 // import './styles.css';
 //inspiration https://www.behance.net/gallery/157781767/Design-a-cool-portfolio-for-a-web-developer?tracking_source=search_projects|web+design+portfolio&l=8
 function App() {
-  function handleClick() {
-    console.log("clocked ");
-    if (localStorage.theme === "dark" || !("theme" in localStorage)) {
-      //add class=dark in html element
-      document.documentElement.classList.add("dark");
-    } else {
-      //remove class=dark in html element
-      document.documentElement.classList.remove("dark");
-    }
-
-    if (localStorage.theme === "dark") {
-      localStorage.theme = "light";
-    } else {
-      localStorage.theme = "dark";
-    }
-  }
+  
   return (
     <>
-      <div style={{ position:"relative", top:"10px",left:"45%"}} className="lg:flex lg:gap-x-12">
-        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-          About me
+
+      <Header>
+      </Header>
+      {/* <div style={{ position:"relative", top:"10px",left:"45%"}} className="lg:flex lg:gap-x-12"> */}
+        {/* <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          Home
         </a>
         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
           Projects
@@ -30,13 +19,16 @@ function App() {
         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
           Download my CV
         </a>
+        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          Contact me
+        </a>
 
-      </div>
+      </div> */}
 
-      {/* <div className="cursor-progress ..."> */}
-      <div  style={{ position:"relative", }} className="cursor-context-menu	 ...">
-        <h1  className="text-13xl font-bold underline">Backend developer</h1>
         {/* https://tailwindcss.com/docs/box-decoration-break */}
+      {/* <div className="cursor-progress ..."> */}
+      {/* <div  style={{ position:"relative", }} className="cursor-context-menu	 ...">
+        <h1  className="text-13xl font-bold underline">Backend developer</h1>
         <span
           style={{ fontSize: "100px" }}
           className="box-decoration-slice bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2 ..."
@@ -54,7 +46,7 @@ function App() {
         >
           Dark/Light
         </button>
-      </div>
+      </div> */}
     </>
   );
 }
