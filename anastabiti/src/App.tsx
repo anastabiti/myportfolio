@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import './styles.css';
 //inspiration https://www.behance.net/gallery/157781767/Design-a-cool-portfolio-for-a-web-developer?tracking_source=search_projects|web+design+portfolio&l=8
 function App() {
-  const [text, setText] = useState("Anas TABITI");
+  const [text, setText] = useState("Hello I'm Anas TABITI");
 
   {
     /* https://tailwindcss.com/docs/box-decoration-break */
