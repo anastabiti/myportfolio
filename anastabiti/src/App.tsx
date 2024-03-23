@@ -58,37 +58,68 @@ function App() {
           />
         </div>
       </div>
-      <div id="projects">
-        <div
-          id="projects"
-          className="absolute items-center justify-center     w-1/3	 h-1/6 "
-        >
-          <Carousel>
-            <div>
+
+      <div id="projects" className="me">
+        <div className="timeline">
+          <div className="timeline-item">
+            <div className="timeline-icon"></div>
+            <div className="timeline-content">
+              <h2 className=" font-bold">Libft</h2>
+              <p>
+                This project is your very first project as a student at 42. You
+                will need to recode a few functions of the C standard library as
+                well as some other utility functions that you will use during
+                your whole cursus.
+              </p>
               <img
                 src="clib.jpg"
                 alt="Project 1"
-                className=" block w-1/3	h-1/6	"
+                className="block w-1/3 h-1/6"
               />
-              <p className="legend">Libft</p>
+            </div>
+          </div>
+
+          <div className="timeline-item">
+            <div className="timeline-icon"></div>
+            <div className="timeline-content">
+              <h2 className=" font-bold">ft_printf</h2>
               <p>
-                Libft: This project is your very first project as a student at
-                42. You will need to recode a few functions of the C standard
-                library as well as some other utility functions that you will
-                use during your whole cursus.
+                This project is pretty straightforward, you have to recode
+                printf. You will learn what is and how to implement variadic
+                functions. Once you validate it, you will reuse this function in
+                your future projects.
               </p>
+              <video
+                src="me.mov"
+                className="block w-2/3 h-1/6"
+                autoPlay
+                muted
+                loop
+              />
             </div>
-            <div>
-              {/* <img src="project2.jpg" alt="Project 2" /> */}
-              <p className="legend">Project 2</p>
-              <p>This is some additional text for Project 2.</p>
+          </div>
+
+          <div className="timeline-item">
+            <div className="timeline-icon"></div>
+            <div className="timeline-content">
+              <h2 className="font-bold">Born2beroot</h2>
+              <p>
+                This project aims to introduce you to the wonderful world of
+                virtualization.
+              </p>
+              <img src="virtual.png"></img>
             </div>
-            <div>
-              {/* <img src="project3.jpg" alt="Project 3" /> */}
-              <p className="legend">Project 3</p>
-              <p>This is some additional text for Project 3.</p>
+          </div>
+          <div className="timeline-item">
+            <div className="timeline-icon"></div>
+            <div className="timeline-content">
+              <h2 className="font-bold">get_next_line</h2>
+              <p>
+              May it be a file, stdin, or even later a network connection, you will always need a way to read content line by line. It is time to start working on this function, which will be essential for your future projects.
+              </p>
+              <img src="virtual.png"></img>
             </div>
-          </Carousel>
+          </div>
         </div>
       </div>
     </>
