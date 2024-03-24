@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { MatrixRainingLetters } from "react-mdr";
 
 // <!-- https://flowbite.com/blocks/marketing/header/ -->
 const Intro: React.FC = () => {
@@ -8,8 +9,11 @@ const Intro: React.FC = () => {
     <>
       <div className="grid  grid-rows-3 grid-flow-col gap-4 mb-80">
         {/* <div></div> */}
+        {/* <MatrixRainingLetters className="absolute inset-0 z-0" /> */}
 
-        <div className="cursor-context-menu back flex items-center justify-center h-4/6 text-right  transform transition duration-1000 ease-in-out hover:rotate-180">
+
+
+          <div className="cursor-context-menu back flex items-center justify-center h-4/6 text-right  transform transition duration-1000 ease-in-out hover:rotate-180">
           <span
             style={{ fontSize: "100px" }}
             className="box-decoration-slice bg-gradient-to-r from-blue-500 to-green-200 dark:from-blue-500 dark:to-black-500 text-white px-2 transform hover:rotate-180"

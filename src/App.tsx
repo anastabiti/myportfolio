@@ -3,6 +3,8 @@ import Projects from "./components/projects";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Intro from "./components/intro";
 import ReactGA from 'react-ga';
+import { MatrixRainingLetters } from "react-mdr";
+import React from "react";
 
 ReactGA.initialize('G-WCTSRBVK5M');
 
@@ -18,28 +20,17 @@ function App() {
   }
   return (
     <>
-      <Header></Header>
-      <Intro></Intro>
-      <br></br>
+
+     <Header ></Header>
+      {/* <MatrixRainingLetters key="foo-bar" /> */}
+      <Intro>
+      </Intro>
+
+      {/* Rest of your website components go here */}
+          <br></br>
       <br></br>
       <br></br>
       <Projects></Projects>
-      {/* <div
-        className="footer"
-        style={{
-          backgroundColor: "grey",
-          textAlign: "center",
-          padding: "10px",
-          position: "fixed",
-          left: "0",
-          bottom: "0",
-          width: "100%",
-        }}
-      >
-        <p style={{ color: "#333" }}>
-          © {new Date().getFullYear()} Anas TABITI
-        </p>
-      </div> */}
     </>
   );
 }
