@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 // <!-- https://flowbite.com/blocks/marketing/header/ -->
 const Projects: React.FC = () => {

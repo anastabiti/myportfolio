@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
 import Header from "./components/headrs";
 import Projects from "./components/projects";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Intro from "./components/intro";
 // import './styles.css';

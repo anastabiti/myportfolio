@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 // <!-- https://flowbite.com/blocks/marketing/header/ -->
 const Intro: React.FC = () => {
-    const [text, setText] = useState("Hello I'm Anas TABITI");
+    const [text] = useState("Hello I'm Anas TABITI");
 
     return ( <>
     
