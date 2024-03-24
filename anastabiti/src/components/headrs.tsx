@@ -39,10 +39,7 @@ const Header: React.FC = () => {
               className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="mobile-menu-2"
               aria-expanded="false"
-            >
-             
-    
-            </button>
+            ></button>
           </div>
           <div
             className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
@@ -58,11 +55,10 @@ const Header: React.FC = () => {
                   Home
                 </a>
               </li>
-   
 
               <li>
                 <a
-                // click here to go to that id div
+                  // click here to go to that id div
                   href="#projects"
                   className="block py-2 pr-4 pl-3 text-blue-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
@@ -71,7 +67,8 @@ const Header: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/anastabiti.pdf"
+                  download
                   className="block py-2 pr-4 pl-3 text-blue-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Download my CV
