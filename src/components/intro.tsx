@@ -7,7 +7,7 @@ const Intro: React.FC = () => {
   return (
     <>
       <div className="grid  grid-rows-3 grid-flow-col gap-4 mb-80">
-        <div></div>
+        {/* <div></div> */}
 
         <div className="cursor-context-menu back flex items-center justify-center h-4/6 text-right  transform transition duration-1000 ease-in-out hover:rotate-180">
           <span
@@ -21,7 +21,7 @@ const Intro: React.FC = () => {
         </div>
 
         <div>
-          <div className="cursor-context-menu back flex  justify-center h-full text-right w-3/6 absolute top-13 ">
+          <div className="cursor-context-menu back flex  justify-center h-full text-right w-3/6 absolute inset-y-2/4">
             <div style={{ overflow: "hidden", whiteSpace: "nowrap" }}>
               <span
                 style={{
@@ -40,11 +40,13 @@ const Intro: React.FC = () => {
 
         <div> </div>
         <div className="">
-          <img
-            src="FILE3.gif"
-            alt="Image"
-            className="transform translate-y-full scale-150"
-          />
+        <video
+            className=""
+            src="BackendSys.mp4 "
+            autoPlay
+            muted
+            loop
+          ></video>
         </div>
       </div>
     </>
