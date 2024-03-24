@@ -20,6 +20,9 @@ function App() {
     <>
       <Header></Header>
       <Intro></Intro>
+      <br></br>
+      <br></br>
+      <br></br>
       <Projects></Projects>
       {/* <div
         className="footer"
