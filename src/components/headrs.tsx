@@ -1,23 +1,8 @@
 import React from "react";
+import ReactGA from "react-ga";
 
 // <!-- https://flowbite.com/blocks/marketing/header/ -->
 const Header: React.FC = () => {
-  function handleClick() {
-    console.log("clocked ");
-    if (localStorage.theme === "dark" || !("theme" in localStorage)) {
-      //add class=dark in html element
-      document.documentElement.classList.add("dark");
-    } else {
-      //remove class=dark in html element
-      document.documentElement.classList.remove("dark");
-    }
-
-    if (localStorage.theme === "dark") {
-      localStorage.theme = "light";
-    } else {
-      localStorage.theme = "dark";
-    }
-  }
   return (
     <header>
       <nav className="bg-green-200 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
@@ -65,7 +50,23 @@ const Header: React.FC = () => {
                   Projects
                 </a>
               </li>
+
               <li>
+                <a
+                  href="/anastabiti.pdf"
+                  download
+                  onClick={() =>
+                    ReactGA.event({
+                      category: "User",
+                      action: "Downloaded CV",
+                    })
+                  }
+                  className="block py-2 pr-4 pl-3 text-blue-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Download my CV
+                </a>
+              </li>
+              {/* <li>
                 <a
                   href="/anastabiti.pdf"
                   download
@@ -73,24 +74,14 @@ const Header: React.FC = () => {
                 >
                   Download my CV
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
-                  href="#"
+                  href="#Contact"
                   className="block py-2 pr-4 pl-3 text-blue-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Contact
                 </a>
-              </li>
-              <li>
-                <button
-                  onClick={handleClick}
-                  type="button"
-                  className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full
-                   text-sm px-6 py-1.45 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Dark/Light
-                </button>
               </li>
             </ul>
           </div>
