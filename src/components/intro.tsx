@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { MatrixRainingLetters } from "react-mdr";
 
 // <!-- https://flowbite.com/blocks/marketing/header/ -->
 const Intro: React.FC = () => {
