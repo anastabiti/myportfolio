@@ -14,8 +14,8 @@ const Projects: React.FC = () => {
               <p>
                 This project is my very first project as a student at 42. I had
                 to recode a few functions from the C standard library, as well
-                as some other utility functions that I will use throughout my
-                entire cursus.
+                as some other utility functions that I used throughout my entire
+                cursus.
               </p>
               <br></br>
               <br></br>
@@ -53,6 +53,7 @@ const Projects: React.FC = () => {
                 This project aims to introduce you to the wonderful world of
                 virtualization.
               </p>
+              <br></br>
               <img src="virtual.png"></img>
               <br></br>
               <div className="flex space-x-4">
@@ -92,6 +93,8 @@ const Projects: React.FC = () => {
                 the bigger UNIX projects that will appear later on in the
                 cursus.
               </p>
+              <br></br>
+
               <video
                 src="minitalk.mov"
                 className="block w-full h-full"
@@ -117,6 +120,8 @@ const Projects: React.FC = () => {
                 This project involves sorting data on a stack, with a limited
                 set of instructions, and the smallest number of moves.
               </p>
+              <br></br>
+
               <video
                 src="pushswap.mov"
                 className="block w-full h-full"
@@ -141,6 +146,8 @@ const Projects: React.FC = () => {
                 This project is a small 2D game with minilibx. I learned about
                 textures, sprites and tiles.
               </p>
+              <br></br>
+
               <video
                 src="so_long.mov"
                 className="block w-full h-full"
@@ -296,7 +303,7 @@ const Projects: React.FC = () => {
                 Building a simple E-commerce REST API with Django REST Framework
               </p>
               <br></br>
-              <img className="block  " src="ftpong.png" />
+              {/* <img className="block  " src="ftpong.png" /> */}
               <br></br>
               <div className="flex space-x-4">
                 <img className="block w-1/6 h-1/6" src="djnago.png" />
@@ -310,7 +317,6 @@ const Projects: React.FC = () => {
         id="Contact"
         className="Contact bg-green-200 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800"
       >
-      
         <h2 style={{ color: "white", fontSize: "20px" }}>Contact Me</h2>
         <p style={{ color: "white", fontSize: "18px" }}>
           Phone: <span style={{ color: "white" }}>00212651321662</span>
@@ -319,7 +325,6 @@ const Projects: React.FC = () => {
           Email: <span style={{ color: "white" }}>anastabiti@gmail.com</span>
         </p>
       </div>
-
     </>
   );
 };
