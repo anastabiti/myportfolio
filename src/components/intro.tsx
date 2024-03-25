@@ -9,7 +9,6 @@ const Intro: React.FC = () => {
     <>
       <div className="grid  grid-rows-3 grid-flow-col ">
         {/* <div></div> */}
-        {/* <MatrixRainingLetters className="absolute inset-0 z-0" /> */}
         <div className="cursor-context-menu back flex items-center justify-center h-4/6 text-right transform transition duration-1000 ease-in-out hover:rotate-180">
           <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl box-decoration-slice bg-gradient-to-r from-blue-500 to-green-200 dark:from-blue-500 dark:to-black-500 text-white px-2 transform hover:rotate-180">
             {text.split("\n").map((item, i) => (
@@ -18,40 +17,21 @@ const Intro: React.FC = () => {
           </span>
         </div>
 
-        {
-          /* <div>
-          <div className="cursor-context-menu back flex  justify-center h-full text-right w-3/6 absolute inset-y-2/4">
+        <div>
+          <div className="cursor-context-menu back flex justify-center h-full text-right w-full sm:w-4/6 md:w-3/6 absolute sm:inset-y-1/4 md:inset-y-1/3">
             <div style={{ overflow: "hidden", whiteSpace: "nowrap" }}>
               <span
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl box-decoration-slice bg-gradient-to-r from-blue-500 to-green-200 dark:from-blue-500 dark:to-black-500 text-white px-2 inline-block"
                 style={{
-                  fontSize: "100px",
                   animation: `typing 3s steps(40, end), blink-caret .75s step-end infinite`,
                   borderRight: ".15em solid orange",
-                  display: "inline-block",
                 }}
-                className="box-decoration-slice bg-gradient-to-r from-blue-500 to-green-200 dark:from-blue-500 dark:to-black-500 text-white px-2"
               >
                 Backend developer
               </span>
             </div>
           </div>
-        </div> */
-          <div>
-            <div className="cursor-context-menu back flex justify-center h-full text-right w-full sm:w-4/6 md:w-3/6 absolute sm:inset-y-1/4 md:inset-y-1/3">
-              <div style={{ overflow: "hidden", whiteSpace: "nowrap" }}>
-                <span
-                  className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl box-decoration-slice bg-gradient-to-r from-blue-500 to-green-200 dark:from-blue-500 dark:to-black-500 text-white px-2 inline-block"
-                  style={{
-                    animation: `typing 3s steps(40, end), blink-caret .75s step-end infinite`,
-                    borderRight: ".15em solid orange",
-                  }}
-                >
-                  Backend developer
-                </span>
-              </div>
-            </div>
-          </div>
-        }
+        </div>
 
         <div> </div>
         <div className="w-full lg:w-5/6">
@@ -63,9 +43,6 @@ const Intro: React.FC = () => {
             loop
           ></video>
         </div>
-        {/* <div className="">
-          <video className="" src="BackendSys.mp4 " autoPlay muted loop></video>
-        </div> */}
       </div>
     </>
   );

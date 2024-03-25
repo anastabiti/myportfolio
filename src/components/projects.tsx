@@ -1,4 +1,5 @@
 import React from "react";
+import { MatrixRainingLetters } from "react-mdr";
 
 // <!-- https://flowbite.com/blocks/marketing/header/ -->
 const Projects: React.FC = () => {
@@ -309,6 +310,7 @@ const Projects: React.FC = () => {
         id="Contact"
         className="Contact bg-green-200 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800"
       >
+      
         <h2 style={{ color: "white", fontSize: "20px" }}>Contact Me</h2>
         <p style={{ color: "white", fontSize: "18px" }}>
           Phone: <span style={{ color: "white" }}>00212651321662</span>
@@ -317,7 +319,7 @@ const Projects: React.FC = () => {
           Email: <span style={{ color: "white" }}>anastabiti@gmail.com</span>
         </p>
       </div>
-      
+
     </>
   );
 };

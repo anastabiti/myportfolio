@@ -1,21 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://media.licdn.com/dms/image/D4E03AQEAFXtO1tmGyA/profile-displayphoto-shrink_400_400/0/1708704656304?e=1716422400&v=beta&t=U3_1pDorF53IXKw5afIaNtD-ZAkd-ITpSYX0xI1FyDk" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://media.licdn.com/dms/image/D4E03AQEAFXtO1tmGyA/profile-displayphoto-shrink_400_400/0/1708704656304?e=1716422400&v=beta&t=U3_1pDorF53IXKw5afIaNtD-ZAkd-ITpSYX0xI1FyDk"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anas TABITI</title>
   </head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WCTSRBVK5M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-WCTSRBVK5M"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-WCTSRBVK5M');
-</script>
-  <body  class="bg-white dark:bg-black ">
+    gtag("config", "G-WCTSRBVK5M");
+  </script>
+
+  <!-- <script>
+    const canvas = document.getElementById("canv");
+    const ctx = canvas.getContext("2d");
+
+    const w = (canvas.width = document.body.offsetWidth);
+    const h = (canvas.height = document.body.offsetHeight);
+    const cols = Math.floor(w / 20) + 1;
+    const ypos = Array(cols).fill(0);
+
+    ctx.fillStyle = "#000";
+    ctx.fillRect(0, 0, w, h);
+
+    function matrix() {
+      ctx.fillStyle = "#0001";
+      ctx.fillRect(0, 0, w, h);
+
+      ctx.fillStyle = "#0f0";
+      ctx.font = "15pt monospace";
+
+      ypos.forEach((y, ind) => {
+        const text = String.fromCharCode(Math.random() * 128);
+        const x = ind * 20;
+        ctx.fillText(text, x, y);
+        if (y > 100 + Math.random() * 10000) ypos[ind] = 0;
+        else ypos[ind] = y + 20;
+      });
+    }
+
+    setInterval(matrix, 50);
+  </script> -->
+
+<body class="bg-white dark:bg-black">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
