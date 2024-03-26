@@ -17,7 +17,7 @@ const Intro: React.FC = () => {
         </div>
 
         <div>
-          <div className="cursor-context-menu back flex justify-center h-full text-right w-full sm:w-4/6 md:w-3/6 absolute sm:inset-y-1/4 md:inset-y-1/3">
+          <div className="cursor-context-menu back flex justify-center h-full text-right w-full sm:w-4/6 md:w-4/6 absolute sm:inset-y-1/4 md:inset-y-2/4">
             <div style={{ overflow: "hidden", whiteSpace: "nowrap" }}>
               <span
                 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl box-decoration-slice bg-gradient-to-r from-blue-500 to-green-200 dark:from-blue-500 dark:to-black-500 text-white px-2 inline-block"
@@ -26,7 +26,7 @@ const Intro: React.FC = () => {
                   borderRight: ".15em solid orange",
                 }}
               >
-                Backend developer
+                Backend developer <br></br>looking for an internship
               </span>
             </div>
           </div>
